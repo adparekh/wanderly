@@ -13,3 +13,4 @@ wheels/
 .env
 
 .notebook/
+gen_env_name.py
