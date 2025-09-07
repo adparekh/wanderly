@@ -1,0 +1,32 @@
+import os
+import json
+from langchain_google_community import GooglePlacesTool, GooglePlacesAPIWrapper
+
+class GooglePlacesSearch:
+    def __init__(self, api_key: str):
+        self.places_wrapper = GooglePlacesAPIWrapper(gplaces_api_key=api_key)
+        self.places_tool = GooglePlacesTool(api_wrapper=self.places_wrapper)
+
+    def google_search_attractions(self, place: str) -> dict:
+        """
+        Searches for attractions in the specified place using GooglePlaces API.
+        """
+        return self.places_tool.run(f"Top attractive places in and around {place}")
+    
+    def google_search_restaurants(self, place: str) -> dict:
+        """
+        Searches for available restaurants in the specified place using GooglePlaces API.
+        """
+        return self.places_tool.run(f"What are the top 10 restaurants and eateries in and around {place}?")
+    
+    def google_search_activities(self, place: str) -> dict:
+        """
+        Searches for popular activities in the specified place using GooglePlaces API.
+        """
+        return self.places_tool.run(f"Activities in and around {place}")
+    
+    def google_search_transportation(self, place: str) -> dict:
+        """
+        Searches for available modes of transportation in the specified place using GooglePlaces API.
+        """
+        return self.places_tool.run(f"What are the different modes of transportation available in {place}?")
