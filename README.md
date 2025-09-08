@@ -53,15 +53,15 @@ It integrates **real-time data** on weather, attractions, activities, hotels, an
 
 ## 🎬 Demo Video  
 
-You can watch the demo [here](#)  
+You can watch the demo [here](https://youtu.be/Q1cPVnjCMys)  
 
 ---
 
 ## 📸 Screenshots  
 
-| Search Query | Itinerary Planning | Downloadable Summary |  
+| Home Page | Itinerary Planning | Itinerary Planned |  
 |--------------|-------------------|-----------------------|  
-| ![Input](assets/1-query.png) | ![Planning](assets/2-itinerary.png) | ![Summary](assets/3-summary.png) |  
+| ![Input](assets/1-home-page.png) | ![Planning](assets/2-trip-planning.png) | ![Planned](assets/3-trip-planned.png) |  
 
 ---
 
@@ -116,8 +116,9 @@ streamlit run app.py
 
 ## 💡 Usage Tips
 
-- Be specific in your queries (include **location** and **number of days**).
-- Use the **download button** in the Streamlit UI to save your trip plan in Markdown format.
+1. **Enter clear queries** – Include **destination** and **number of days**.  
+2. **Download your plan** – Use the download button at the bottom to export results.  
+   👉 Example available at [`sample_trip_plan.md`](./sample_trip_plan.md).  
 
 ---
 
@@ -148,3 +149,4 @@ wanderly/
 │── requirements.txt       # Dependency list  
 │── .env.name              # API keys and environment variables
 ```
+
