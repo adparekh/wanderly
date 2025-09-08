@@ -1,1 +1,0 @@
-"""Exceptions package for Wanderly"""
